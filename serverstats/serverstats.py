@@ -24,7 +24,7 @@ class ServerStats(commands.Cog):
             await category.edit(position=0)
             humans = self.get_humans(ctx)
             bots = self.get_bots(ctx)
-            names = ["Member Count", "Role Count", "Channel Count", "Total Humans", "Total Bots"]
+            names = ["Member Count", "Role Count", "Channel Count", "Member Count", "Total Bots"]
             counts = [ctx.guild.member_count, len(ctx.guild.roles), len(ctx.guild.channels), humans, bots]
             checks = ["m", "r", "c", "h", "b"]
             for name, count, check in zip(names, counts, checks):
