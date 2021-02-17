@@ -90,7 +90,7 @@ class ServerStats(commands.Cog):
         
     @commands.command()
     @checks.has_permissions(PermissionLevel.ADMINISTRATOR)
-    async def fixvc(self, ctx):
+    async def repairvc(self, ctx):
         """Fix broken VC counts"""
         guild = ctx.guild
         humans = self.get_humans(ctx)
